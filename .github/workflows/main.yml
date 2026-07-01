@@ -7,4 +7,10 @@ jobs:
   Job1:
     name: Azure login
     runs-on: ubuntu-22.04
-    
+    steps: 
+     - name: Azure Login
+       uses: Azure/login@v3
+       with:
+        client-id: # optional
+        tenant-id: # optional
+        subscription-id: # optional
